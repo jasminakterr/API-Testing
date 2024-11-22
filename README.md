@@ -1,1 +1,1 @@
-# API-Testing of Rest Booking API Testing with Postman Newman
+# Rest Booking API Testing with Postman Newman
