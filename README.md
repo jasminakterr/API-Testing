@@ -161,30 +161,33 @@ This project demonstrates API testing using Postman, providing a collection of t
 ### Request Method: PUT
 ### Pre-request Script:
 ```console 
-    var firstName = pm.variables.replaceIn("{{$randomFirstName}}")
-    pm.environment.set("firstName", firstName)
-    console.log("First Name Value "+firstName)
-    
-    var lastName = pm.variables.replaceIn("{{$randomLastName}}")
-    pm.environment.set("lastName", lastName)
-    console.log("Last Name Value "+lastName)
-    
-    var totalPrice = pm.variables.replaceIn("{{$randomInt}}")
-    pm.environment.set("totalPrice", totalPrice)
-    console.log(totalPrice)
-    
-    var depositPaid = pm.variables.replaceIn("{{$randomBoolean}}")
-    pm.environment.set("depositPaid", depositPaid)
-    console.log(depositPaid)
-    
-    //Date
-    const moment = require('moment')
-    const today = moment()
-    pm.environment.set("checkin", today.add(1,'d').format("YYYY-MM-DD"))
-    pm.environment.set("checkout",today.add(5,'d').format("YYYY-MM-DD") )
-    
-    var additionalNeeds = pm.variables.replaceIn("{{$randomNoun}}")
-    pm.environment.set("additionalNeeds", additionalNeeds)
+    //********** First name generate *********//
+var updated_firstName = pm.variables.replaceIn("{{$randomFirstName}}")
+console.log(updated_firstName)
+pm.environment.set("updated_firstName", updated_firstName)
+//********** Last name generate *********// 
+var updated_lastName = pm.variables.replaceIn("{{$randomLastName}}")
+console.log(updated_lastName)
+pm.environment.set("updated_lastName", updated_lastName)
+//********** Total price generate *********// 
+var updated_totalPrice = pm.variables.replaceIn("{{$randomInt}}")
+console.log(updated_totalPrice)
+pm.environment.set("updated_totalPrice", updated_totalPrice)
+//********** Deposit paid generate *********//
+var Updated_depositPaid = pm.variables.replaceIn("{{$randomBoolean}}")
+console.log(Updated_depositPaid)
+pm.environment.set("Updated_depositPaid", Updated_depositPaid)
+//********** Booking date generate *********//
+const moment = require('moment')
+const today = moment()
+//********** Checkin date generate *********//
+pm.environment.set("updated_checkin", today.add(1,'d').format("YYYY-MM-DD"))
+//********** Checkout date generate *********//
+pm.environment.set("updated_checkout",today.add(7,'d').format("YYYY-MM-DD") )
+//********** Additional needs generate *********//    
+var updated_additionalNeeds = pm.variables.replaceIn("{{$randomNoun}}")
+console.log(updated_additionalNeeds)
+pm.environment.set("updated_additionalNeeds", updated_additionalNeeds)
 ```
   **Request Body:** 
  ```console 
