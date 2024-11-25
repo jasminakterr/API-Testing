@@ -236,3 +236,13 @@ newman run Jasmin.postman_collection.json -e Practice.postman_environment.json -
 ```
 
 ## Newman Report Summary:
+![Report 1](https://github.com/user-attachments/assets/627c3a6a-16e7-4095-bcb0-7d9f5b836ca4)
+
+
+![Report 2](https://github.com/user-attachments/assets/2a96b220-f87b-49ed-a18e-e5d6291a5c1e)
+
+
+![Report 3](https://github.com/user-attachments/assets/b55671ff-1afa-4668-8ba6-3acce8dc2754)
+![Report 4](https://github.com/user-attachments/assets/e4f1b0d0-1d26-422a-90a1-34e53e10900a)
+
+
