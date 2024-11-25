@@ -10,7 +10,7 @@ This project demonstrates API testing using Postman, providing a collection of t
 - Test scripts for assertions and validations
 
 ## API Documentation:
-- https://documenter.getpostman.com/view/13082503/2sA2xmUAJ1
+- [https://documenter.getpostman.com/view/13082503/2sA2xmUAJ1](https://www.postman.com/ggh555/api-testing/documentation/dy6fuue/jasmin-sqa?workspaceId=90b9b583-89de-431c-98c6-40f403bb1efd)
   
 ### **Technology used:**
 - Postman
